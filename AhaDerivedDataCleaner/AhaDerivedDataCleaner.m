@@ -7,6 +7,9 @@
 //
 
 #import "AhaDerivedDataCleaner.h"
+#import "MainMenuItem.h"
+
+
 
 @interface AhaDerivedDataCleaner()
 
@@ -40,27 +43,35 @@
     
     // Create menu items, initialize UI, etc.
     // Sample Menu Item:
-    NSMenuItem *menuItem = [[NSApp mainMenu] itemWithTitle:@"Edit"];
-    if (menuItem) {
-        [[menuItem submenu] addItem:[NSMenuItem separatorItem]];
-        NSMenuItem *actionMenuItem = [[NSMenuItem alloc] initWithTitle:@"Do Action" action:@selector(doMenuAction) keyEquivalent:@""];
-        //[actionMenuItem setKeyEquivalentModifierMask:NSAlphaShiftKeyMask | NSControlKeyMask];
-        [actionMenuItem setTarget:self];
-        [[menuItem submenu] addItem:actionMenuItem];
-    }
+    [self addPluginsMenu];
 }
 
-// Sample Action, for menu item:
-- (void)doMenuAction
-{
-    NSAlert *alert = [[NSAlert alloc] init];
-    [alert setMessageText:@"Hello, World"];
-    [alert runModal];
-}
 
 - (void)dealloc
 {
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
+
+
+- (void)addPluginsMenu
+{
+    // Add Plugins menu next to Window menu
+    NSMenu *mainMenu = [NSApp mainMenu];
+    NSMenuItem *pluginsMenuItem = [mainMenu itemWithTitle:@"Plugins"];
+    if (!pluginsMenuItem) {
+        pluginsMenuItem = [[NSMenuItem alloc] init];
+        pluginsMenuItem.title = @"Plugins";
+        pluginsMenuItem.submenu = [[NSMenu alloc] initWithTitle:pluginsMenuItem.title];
+        NSInteger windowIndex = [mainMenu indexOfItemWithTitle:@"Window"];
+        [mainMenu insertItem:pluginsMenuItem atIndex:windowIndex];
+    }
+    
+    [pluginsMenuItem.submenu addItem:[NSMenuItem separatorItem]];
+    NSMenuItem *mainMenuItem = [[MainMenuItem alloc] init];
+    [pluginsMenuItem.submenu addItem:mainMenuItem];
+    [pluginsMenuItem.submenu addItem:[NSMenuItem separatorItem]];
+    [pluginsMenuItem.submenu addItem:[NSMenuItem separatorItem]];
+}
+
 
 @end

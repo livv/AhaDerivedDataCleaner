@@ -12,6 +12,8 @@
 		B60E07A71C919E2E009E4236 /* AhaDerivedDataCleaner.xcscheme in Resources */ = {isa = PBXBuildFile; fileRef = B60E07A61C919E2E009E4236 /* AhaDerivedDataCleaner.xcscheme */; };
 		B60E07AA1C919E2E009E4236 /* AhaDerivedDataCleaner.m in Sources */ = {isa = PBXBuildFile; fileRef = B60E07A91C919E2E009E4236 /* AhaDerivedDataCleaner.m */; };
 		B60E07AD1C919E2E009E4236 /* NSObject_Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = B60E07AC1C919E2E009E4236 /* NSObject_Extension.m */; };
+		B60E07B91C919E45009E4236 /* MainMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B60E07B61C919E45009E4236 /* MainMenuItem.m */; };
+		B60E07BA1C919E45009E4236 /* DMMDerivedDataHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = B60E07B81C919E45009E4236 /* DMMDerivedDataHandler.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,10 @@
 		B60E07AB1C919E2E009E4236 /* NSObject_Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSObject_Extension.h; sourceTree = "<group>"; };
 		B60E07AC1C919E2E009E4236 /* NSObject_Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSObject_Extension.m; sourceTree = "<group>"; };
 		B60E07AE1C919E2E009E4236 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B60E07B51C919E45009E4236 /* MainMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuItem.h; sourceTree = "<group>"; };
+		B60E07B61C919E45009E4236 /* MainMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuItem.m; sourceTree = "<group>"; };
+		B60E07B71C919E45009E4236 /* DMMDerivedDataHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMMDerivedDataHandler.h; sourceTree = "<group>"; };
+		B60E07B81C919E45009E4236 /* DMMDerivedDataHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMMDerivedDataHandler.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +74,9 @@
 		B60E07A41C919E2E009E4236 /* AhaDerivedDataCleaner */ = {
 			isa = PBXGroup;
 			children = (
+				B60E07B41C919E45009E4236 /* Configs */,
+				B60E07B71C919E45009E4236 /* DMMDerivedDataHandler.h */,
+				B60E07B81C919E45009E4236 /* DMMDerivedDataHandler.m */,
 				B60E07A81C919E2E009E4236 /* AhaDerivedDataCleaner.h */,
 				B60E07A91C919E2E009E4236 /* AhaDerivedDataCleaner.m */,
 				B60E07AB1C919E2E009E4236 /* NSObject_Extension.h */,
@@ -84,6 +93,15 @@
 				B60E07A61C919E2E009E4236 /* AhaDerivedDataCleaner.xcscheme */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B60E07B41C919E45009E4236 /* Configs */ = {
+			isa = PBXGroup;
+			children = (
+				B60E07B51C919E45009E4236 /* MainMenuItem.h */,
+				B60E07B61C919E45009E4236 /* MainMenuItem.m */,
+			);
+			path = Configs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,7 +172,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B60E07AA1C919E2E009E4236 /* AhaDerivedDataCleaner.m in Sources */,
+				B60E07B91C919E45009E4236 /* MainMenuItem.m in Sources */,
 				B60E07AD1C919E2E009E4236 /* NSObject_Extension.m in Sources */,
+				B60E07BA1C919E45009E4236 /* DMMDerivedDataHandler.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
