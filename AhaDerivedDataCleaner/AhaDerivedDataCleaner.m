@@ -7,7 +7,7 @@
 //
 
 #import "AhaDerivedDataCleaner.h"
-#import "MainMenuItem.h"
+#import "DerivedDataMenuItem.h"
 
 
 
@@ -67,7 +67,7 @@
     }
     
     [pluginsMenuItem.submenu addItem:[NSMenuItem separatorItem]];
-    NSMenuItem *mainMenuItem = [[MainMenuItem alloc] init];
+    NSMenuItem *mainMenuItem = [[DerivedDataMenuItem alloc] init];
     [pluginsMenuItem.submenu addItem:mainMenuItem];
     [pluginsMenuItem.submenu addItem:[NSMenuItem separatorItem]];
     [pluginsMenuItem.submenu addItem:[NSMenuItem separatorItem]];

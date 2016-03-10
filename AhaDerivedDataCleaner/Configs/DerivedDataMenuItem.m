@@ -6,7 +6,7 @@
 //  Copyright © 2016 haiwei. All rights reserved.
 //
 
-#import "MainMenuItem.h"
+#import "DerivedDataMenuItem.h"
 #import "DMMDerivedDataHandler.h"
 
 #define RandomRange(min, max) (arc4random_uniform(max - min) + min)
@@ -27,13 +27,13 @@ typedef NS_ENUM(NSUInteger, MenuItemType) {
 @end
 
 
-@interface MainMenuItem ()
+@interface DerivedDataMenuItem ()
 
 
 @end
 
 
-@implementation MainMenuItem
+@implementation DerivedDataMenuItem
 
 - (instancetype)init
 {
@@ -116,19 +116,16 @@ typedef NS_ENUM(NSUInteger, MenuItemType) {
             return;
         }
     }
-    [self alert:@"No Workspace opened"];
 }
 
 - (void)cleanAllDerivedData
 {
     [DMMDerivedDataHandler clearAllDerivedData];
-    [self alert:@"Clean All Derived Data\nSucceeded"];
 }
 
 - (void)cleanModuleCache
 {
     [DMMDerivedDataHandler clearModuleCache];
-    [self alert:@"Clean Module Cache\nSucceeded"];
 }
 
 @end
