@@ -7,19 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B60028B11C91C30100CB1035 /* PluginsShowInFinderMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B60028B01C91C30100CB1035 /* PluginsShowInFinderMenuItem.m */; };
 		B60E07A11C919E2E009E4236 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B60E07A01C919E2E009E4236 /* AppKit.framework */; };
 		B60E07A31C919E2E009E4236 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B60E07A21C919E2E009E4236 /* Foundation.framework */; };
 		B60E07A71C919E2E009E4236 /* AhaDerivedDataCleaner.xcscheme in Resources */ = {isa = PBXBuildFile; fileRef = B60E07A61C919E2E009E4236 /* AhaDerivedDataCleaner.xcscheme */; };
 		B60E07AA1C919E2E009E4236 /* AhaDerivedDataCleaner.m in Sources */ = {isa = PBXBuildFile; fileRef = B60E07A91C919E2E009E4236 /* AhaDerivedDataCleaner.m */; };
 		B60E07AD1C919E2E009E4236 /* NSObject_Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = B60E07AC1C919E2E009E4236 /* NSObject_Extension.m */; };
-		B60E07B91C919E45009E4236 /* DerivedDataMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B60E07B61C919E45009E4236 /* DerivedDataMenuItem.m */; };
-		B60E07BA1C919E45009E4236 /* DMMDerivedDataHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = B60E07B81C919E45009E4236 /* DMMDerivedDataHandler.m */; };
+		B6E813061C92624C002C2E4D /* DMMDerivedDataHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E813031C92624C002C2E4D /* DMMDerivedDataHandler.m */; };
+		B6E813071C92624C002C2E4D /* MainMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E813051C92624C002C2E4D /* MainMenuItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B60028AF1C91C30100CB1035 /* PluginsShowInFinderMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PluginsShowInFinderMenuItem.h; sourceTree = "<group>"; };
-		B60028B01C91C30100CB1035 /* PluginsShowInFinderMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PluginsShowInFinderMenuItem.m; sourceTree = "<group>"; };
 		B60E079D1C919E2E009E4236 /* AhaDerivedDataCleaner.xcplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AhaDerivedDataCleaner.xcplugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		B60E07A01C919E2E009E4236 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		B60E07A21C919E2E009E4236 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
@@ -29,10 +26,10 @@
 		B60E07AB1C919E2E009E4236 /* NSObject_Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSObject_Extension.h; sourceTree = "<group>"; };
 		B60E07AC1C919E2E009E4236 /* NSObject_Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSObject_Extension.m; sourceTree = "<group>"; };
 		B60E07AE1C919E2E009E4236 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B60E07B51C919E45009E4236 /* DerivedDataMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DerivedDataMenuItem.h; sourceTree = "<group>"; };
-		B60E07B61C919E45009E4236 /* DerivedDataMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DerivedDataMenuItem.m; sourceTree = "<group>"; };
-		B60E07B71C919E45009E4236 /* DMMDerivedDataHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMMDerivedDataHandler.h; sourceTree = "<group>"; };
-		B60E07B81C919E45009E4236 /* DMMDerivedDataHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMMDerivedDataHandler.m; sourceTree = "<group>"; };
+		B6E813021C92624C002C2E4D /* DMMDerivedDataHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMMDerivedDataHandler.h; sourceTree = "<group>"; };
+		B6E813031C92624C002C2E4D /* DMMDerivedDataHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMMDerivedDataHandler.m; sourceTree = "<group>"; };
+		B6E813041C92624C002C2E4D /* MainMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuItem.h; sourceTree = "<group>"; };
+		B6E813051C92624C002C2E4D /* MainMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,9 +74,9 @@
 		B60E07A41C919E2E009E4236 /* AhaDerivedDataCleaner */ = {
 			isa = PBXGroup;
 			children = (
-				B60E07B41C919E45009E4236 /* Configs */,
-				B60E07B71C919E45009E4236 /* DMMDerivedDataHandler.h */,
-				B60E07B81C919E45009E4236 /* DMMDerivedDataHandler.m */,
+				B6E813011C92624C002C2E4D /* deriveddata-exterminator */,
+				B6E813041C92624C002C2E4D /* MainMenuItem.h */,
+				B6E813051C92624C002C2E4D /* MainMenuItem.m */,
 				B60E07A81C919E2E009E4236 /* AhaDerivedDataCleaner.h */,
 				B60E07A91C919E2E009E4236 /* AhaDerivedDataCleaner.m */,
 				B60E07AB1C919E2E009E4236 /* NSObject_Extension.h */,
@@ -98,15 +95,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		B60E07B41C919E45009E4236 /* Configs */ = {
+		B6E813011C92624C002C2E4D /* deriveddata-exterminator */ = {
 			isa = PBXGroup;
 			children = (
-				B60E07B51C919E45009E4236 /* DerivedDataMenuItem.h */,
-				B60E07B61C919E45009E4236 /* DerivedDataMenuItem.m */,
-				B60028AF1C91C30100CB1035 /* PluginsShowInFinderMenuItem.h */,
-				B60028B01C91C30100CB1035 /* PluginsShowInFinderMenuItem.m */,
+				B6E813021C92624C002C2E4D /* DMMDerivedDataHandler.h */,
+				B6E813031C92624C002C2E4D /* DMMDerivedDataHandler.m */,
 			);
-			path = Configs;
+			path = "deriveddata-exterminator";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,11 +171,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6E813071C92624C002C2E4D /* MainMenuItem.m in Sources */,
 				B60E07AA1C919E2E009E4236 /* AhaDerivedDataCleaner.m in Sources */,
-				B60028B11C91C30100CB1035 /* PluginsShowInFinderMenuItem.m in Sources */,
-				B60E07B91C919E45009E4236 /* DerivedDataMenuItem.m in Sources */,
 				B60E07AD1C919E2E009E4236 /* NSObject_Extension.m in Sources */,
-				B60E07BA1C919E45009E4236 /* DMMDerivedDataHandler.m in Sources */,
+				B6E813061C92624C002C2E4D /* DMMDerivedDataHandler.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

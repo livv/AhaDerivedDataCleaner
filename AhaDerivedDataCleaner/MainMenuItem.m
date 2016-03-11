@@ -6,7 +6,7 @@
 //  Copyright © 2016 haiwei. All rights reserved.
 //
 
-#import "DerivedDataMenuItem.h"
+#import "MainMenuItem.h"
 #import "DMMDerivedDataHandler.h"
 
 #define RandomRange(min, max) (arc4random_uniform(max - min) + min)
@@ -27,13 +27,13 @@ typedef NS_ENUM(NSUInteger, MenuItemType) {
 @end
 
 
-@interface DerivedDataMenuItem ()
+@interface MainMenuItem ()
 
 
 @end
 
 
-@implementation DerivedDataMenuItem
+@implementation MainMenuItem
 
 - (instancetype)init
 {
@@ -94,13 +94,6 @@ typedef NS_ENUM(NSUInteger, MenuItemType) {
     
 }
 
-- (void)alert:(NSString *)msg {
-    
-    NSAlert *alert = [[NSAlert alloc] init];
-    [alert setMessageText:msg];
-    [alert runModal];
-}
-
 
 #pragma mark -
 
@@ -112,7 +105,6 @@ typedef NS_ENUM(NSUInteger, MenuItemType) {
         if ([[controller valueForKey:@"window"] isKeyWindow]) {
             id workspace = [controller valueForKey:@"_workspace"];
             [DMMDerivedDataHandler clearDerivedDataForProject:[workspace valueForKey:@"name"]];
-            [self alert:[NSString stringWithFormat:@"Clear Derived Data for project: %@\nSucceeded", [workspace valueForKey:@"name"]]];
             return;
         }
     }

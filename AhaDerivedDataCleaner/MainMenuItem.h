@@ -8,6 +8,6 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface DerivedDataMenuItem : NSMenuItem
+@interface MainMenuItem : NSMenuItem
 
 @end
