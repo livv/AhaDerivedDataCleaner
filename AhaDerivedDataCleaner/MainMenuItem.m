@@ -9,11 +9,6 @@
 #import "MainMenuItem.h"
 #import "DMMDerivedDataHandler.h"
 
-#define RandomRange(min, max) (arc4random_uniform(max - min) + min)
-
-#define PluginVersion ([[NSBundle bundleForClass:[self class]] objectForInfoDictionaryKey:@"CFBundleShortVersionString"])
-
-
 
 typedef NS_ENUM(NSUInteger, MenuItemType) {
     kMenuItemTypeCleanForProject = 1,
@@ -39,7 +34,7 @@ typedef NS_ENUM(NSUInteger, MenuItemType) {
 {
     if (self = [super init]) {
         
-        self.title = [NSString stringWithFormat:@"Aha DerivedData Cleaner (v%@)", PluginVersion];
+        self.title = @"Aha DerivedData Cleaner";
         
         NSMenu *configMenu = [[NSMenu alloc] init];
         configMenu.autoenablesItems = NSOffState;
